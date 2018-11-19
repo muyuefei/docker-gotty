@@ -1,0 +1,11 @@
+version: '2'
+services:
+  gotty:
+    build:
+      context: ../gotty
+      args:
+        - account=
+        - password=
+        - command=
+    ports:
+      - "8888:8888"
